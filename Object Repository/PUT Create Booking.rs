@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;Baru\&quot;,\n    \&quot;lastname\&quot; : \&quot;Naga\&quot;,\n    \&quot;totalprice\&quot; : 606,\n    \&quot;depositpaid\&quot; : \&quot;true\&quot;,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2024-02-14\&quot;,\n        \&quot;checkout\&quot; : \&quot;2024-02-15\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;No need\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;${GlobalVariable.firstname}\&quot;,\n    \&quot;lastname\&quot; : \&quot;${GlobalVariable.lastname}\&quot;,\n    \&quot;totalprice\&quot; : \&quot;${GlobalVariable.totalprice}\&quot;,\n    \&quot;depositpaid\&quot; : \&quot;${GlobalVariable.depositpaid}\&quot;,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2024-02-14\&quot;,\n        \&quot;checkout\&quot; : \&quot;2024-02-15\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;${GlobalVariable.additionalneeds}\&quot;\n}\n&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -81,6 +81,14 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyElementPropertyValue(response, &quot;booking.firstname&quot;, ${GlobalVariable.firstname})
+WS.verifyElementPropertyValue(response, &quot;booking.lastname&quot;, ${GlobalVariable.lastname})
+WS.verifyElementPropertyValue(response, &quot;booking.totalprice&quot;, ${GlobalVariable.totalprice})
+WS.verifyElementPropertyValue(response, &quot;booking.depositpaid&quot;, ${GlobalVariable.depositpaid})
+WS.verifyElementPropertyValue(response, &quot;booking.bookingdates.checkin&quot;, &quot;2024-02-14&quot;)
+WS.verifyElementPropertyValue(response, &quot;booking.bookingdates.checkout&quot;, &quot;2024-02-15&quot;)
+WS.verifyElementPropertyValue(response, &quot;booking.additionalneeds&quot;, ${GlobalVariable.additionalneeds})</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

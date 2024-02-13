@@ -17,5 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('PUT Create Booking', [('bookingid') : GlobalVariable.bookingid]))
+WebUI.callTestCase(findTestCase('POST/TC - POST Get Token'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('POST/TC - POST Create Booking'), [:], FailureHandling.STOP_ON_FAILURE)
+
+response = WS.sendRequest(findTestObject('PUT Create Booking', [('bookingid') : GlobalVariable.bookingid]))
+
+String firstname = WS.getElementPropertyValue(response, "firstname")
+println(firstname)
+
+String gbFirstName = GlobalVariable.firstname
+println(gbFirstName)
+
+WS.verifyElementPropertyValue(response, "firstname", GlobalVariable.firstname)
+WS.verifyElementPropertyValue(response, "lastname", GlobalVariable.lastname)
+WS.verifyElementPropertyValue(response, "totalprice", GlobalVariable.totalprice)
+WS.verifyElementPropertyValue(response, "depositpaid", GlobalVariable.depositpaid)
+WS.verifyElementPropertyValue(response, "bookingdates.checkin", "2024-02-14")
+WS.verifyElementPropertyValue(response, "bookingdates.checkout", "2024-02-15")
+WS.verifyElementPropertyValue(response, "additionalneeds", GlobalVariable.additionalneeds)

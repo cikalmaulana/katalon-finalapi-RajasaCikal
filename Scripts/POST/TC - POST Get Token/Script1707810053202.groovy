@@ -21,9 +21,8 @@ response = WS.sendRequest(findTestObject('POST Get Token'))
 
 String newToken = WS.getElementPropertyValue(response, "token")
 
-println(newToken)
-
 GlobalVariable.token = newToken
 
+println(newToken)
 println(GlobalVariable.token)
 

@@ -1,7 +1,7 @@
 # Restful API restful-booker.herokuapp.com
 
 ## Overview
-This Katalon project is designed to test the Restful Booker API, covering various scenarios with distinct test cases.
+This Katalon project is designed to thoroughly evaluate the functionality and reliability of the Restful Booker API. The test suites cover critical aspects of booking management, ensuring the API performs seamlessly under diverse scenarios.
 
 ## Test Cases
 ### 1. PUT Create Booking

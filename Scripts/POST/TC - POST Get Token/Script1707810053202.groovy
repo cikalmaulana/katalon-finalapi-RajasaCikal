@@ -20,3 +20,6 @@ import org.openqa.selenium.Keys as Keys
 response = WS.sendRequest(findTestObject('POST Get Token'))
 
 String newToken = WS.getElementPropertyValue(response, "token")
+
+GlobalVariable.token = newToken
+

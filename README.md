@@ -6,7 +6,7 @@ This Katalon project is designed to thoroughly evaluate the functionality and re
 ## Test Cases
 ### 1. PUT Create Booking
 Description
-This test case updates an existing booking with details fetched from global variables. The booking ID is taken from the global variable bookingid.
+This test case updates an existing booking with details fetched from global variables. The booking ID is taken from the global variable bookingid. In the Restful Booker API test suite, API chaining is implemented in the PUT Create Booking test case. This test case updates an existing booking by sending a PUT request to the URL https://restful-booker.herokuapp.com/booking/${bookingid}, where ${bookingid} is a global variable representing the booking ID.
 
 API Endpoint : URL: https://restful-booker.herokuapp.com/booking/${bookingid}
 

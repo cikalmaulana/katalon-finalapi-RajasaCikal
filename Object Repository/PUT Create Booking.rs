@@ -46,14 +46,14 @@
       <matchCondition>equals</matchCondition>
       <name>Cookie</name>
       <type>Main</type>
-      <value>token=95f3061c399f3d6</value>
+      <value>token=${GlobalVariable.token}</value>
       <webElementGuid>d9ffc4f6-f61b-4f01-937c-63521e768117</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.0.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking/3370</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking/${bookingid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -62,6 +62,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.bookingid</defaultValue>
+      <description></description>
+      <id>6ffb7d9d-f90f-4df8-be0c-c6ef93aebfea</id>
+      <masked>false</masked>
+      <name>bookingid</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

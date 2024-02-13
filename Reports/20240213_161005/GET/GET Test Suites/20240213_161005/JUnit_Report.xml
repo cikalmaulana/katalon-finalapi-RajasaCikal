@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GET Test Suites" time="5.796" tests="2" failures="0" errors="0">
+   <testsuite name="GET Test Suites" tests="2" failures="0" errors="0" time="5.796" skipped="0" timestamp="2024-02-13 16:10:08" hostname="CIkal - Cikal" id="Test Suites/GET/GET Test Suites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\CIkal\\git\\katalon-finalapi-RajasaCikal\\Reports\\20240213_161005\\GET\\GET Test Suites\\20240213_161005"/>
+         <property name="logFiles" value="C:\\Users\\CIkal\\git\\katalon-finalapi-RajasaCikal\\Reports\\20240213_161005\\GET\\GET Test Suites\\20240213_161005\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="CIkal - Cikal"/>
+         <property name="hostAddress" value="172.16.213.167"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.0.0.212"/>
+      </properties>
+      <testcase name="Test Cases/GET/TC - GET Booking" time="4.084" classname="Test Cases/GET/TC - GET Booking" status="PASSED">
+         <system-out><![CDATA[2024-02-13 16:10:08 - [TEST_CASE][PASSED] - Test Cases/GET/TC - GET Booking: Test Cases/GET/TC - GET Booking
+
+2024-02-13 16:10:09 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET Booking")): Send request successfully
+
+2024-02-13 16:10:12 - [MESSAGE][INFO] - HAR: C:\Users\CIkal\git\katalon-finalapi-RajasaCikal\Reports\20240213_161005\GET\GET Test Suites\20240213_161005\requests\main\0.har
+
+2024-02-13 16:10:12 - [MESSAGE][PASSED] - Send request successfully
+
+2024-02-13 16:10:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-02-13 16:10:12 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/GET/TC - GET BookingIds" time="1.522" classname="Test Cases/GET/TC - GET BookingIds" status="PASSED">
+         <system-out><![CDATA[2024-02-13 16:10:12 - [TEST_CASE][PASSED] - Test Cases/GET/TC - GET BookingIds: Test Cases/GET/TC - GET BookingIds
+
+2024-02-13 16:10:13 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET BookingIds")): Send request successfully
+
+2024-02-13 16:10:14 - [MESSAGE][INFO] - HAR: C:\Users\CIkal\git\katalon-finalapi-RajasaCikal\Reports\20240213_161005\GET\GET Test Suites\20240213_161005\requests\main\1.har
+
+2024-02-13 16:10:14 - [MESSAGE][PASSED] - Send request successfully
+
+2024-02-13 16:10:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-02-13 16:10:14 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2024-02-13 16:10:08 - [TEST_SUITE][PASSED] - GET Test Suites: Test Cases/GET/TC - GET BookingIds]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

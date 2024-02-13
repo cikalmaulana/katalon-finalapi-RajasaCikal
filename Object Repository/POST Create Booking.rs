@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;Dika\&quot;,\n    \&quot;lastname\&quot; : \&quot;Naga\&quot;,\n    \&quot;totalprice\&quot; : 606,\n    \&quot;depositpaid\&quot; : \&quot;true\&quot;,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2024-02-14\&quot;,\n        \&quot;checkout\&quot; : \&quot;2024-02-15\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;No need\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;${GlobalVariable.firstname}\&quot;,\n    \&quot;lastname\&quot; : \&quot;${GlobalVariable.lastname}\&quot;,\n    \&quot;totalprice\&quot; : \&quot;${GlobalVariable.totalprice}\&quot;,\n    \&quot;depositpaid\&quot; : \&quot;${GlobalVariable.depositpaid}\&quot;,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2024-02-14\&quot;,\n        \&quot;checkout\&quot; : \&quot;2024-02-15\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;${GlobalVariable.additionalneeds}\&quot;\n}\n&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

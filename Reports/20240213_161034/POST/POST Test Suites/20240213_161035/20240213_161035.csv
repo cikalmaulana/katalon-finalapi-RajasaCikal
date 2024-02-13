@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POST Test Suites,,,,2024-02-13 16:10:40,2024-02-13 16:10:47,6.467s,PASSED
+,,,,,,,
+Test Cases/POST/TC - POST Create Booking,,,,2024-02-13 16:10:41,2024-02-13 16:10:45,4.638s,PASSED
+"response = sendRequest(findTestObject(""POST Create Booking""))",,,,2024-02-13 16:10:41,2024-02-13 16:10:45,3.500s,PASSED
+"newBookingID = getElementPropertyValue(response, ""bookingid"")",,,,2024-02-13 16:10:45,2024-02-13 16:10:45,0.136s,PASSED
+bookingid = newBookingID,,,,2024-02-13 16:10:45,2024-02-13 16:10:45,0.383s,PASSED
+println(newBookingID),,,,2024-02-13 16:10:45,2024-02-13 16:10:45,0.011s,PASSED
+println(bookingid),,,,2024-02-13 16:10:45,2024-02-13 16:10:45,0.005s,PASSED
+,,,,,,,
+Test Cases/POST/TC - POST Get Token,,,,2024-02-13 16:10:45,2024-02-13 16:10:47,1.426s,PASSED
+"response = sendRequest(findTestObject(""POST Get Token""))",,,,2024-02-13 16:10:46,2024-02-13 16:10:47,1.210s,PASSED
+"newToken = getElementPropertyValue(response, ""token"")",,,,2024-02-13 16:10:47,2024-02-13 16:10:47,0.035s,PASSED
+token = newToken,,,,2024-02-13 16:10:47,2024-02-13 16:10:47,0.002s,PASSED
+println(newToken),,,,2024-02-13 16:10:47,2024-02-13 16:10:47,0.002s,PASSED
+println(token),,,,2024-02-13 16:10:47,2024-02-13 16:10:47,0.001s,PASSED

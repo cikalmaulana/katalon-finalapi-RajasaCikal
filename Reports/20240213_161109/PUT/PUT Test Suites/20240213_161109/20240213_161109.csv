@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PUT Test Suites,,,,2024-02-13 16:11:14,2024-02-13 16:11:22,8.447s,PASSED
+,,,,,,,
+Test Cases/PUT/TC - PUT Create Booking,,,,2024-02-13 16:11:14,2024-02-13 16:11:22,8.118s,PASSED
+"callTestCase(findTestCase(""POST/TC - POST Get Token""), [:], STOP_ON_FAILURE)",,,,2024-02-13 16:11:15,2024-02-13 16:11:19,4.334s,PASSED
+"callTestCase(findTestCase(""POST/TC - POST Create Booking""), [:], STOP_ON_FAILURE)",,,,2024-02-13 16:11:19,2024-02-13 16:11:21,1.437s,PASSED
+"response = sendRequest(findTestObject(""PUT Create Booking"", [""bookingid"":bookingid]))",,,,2024-02-13 16:11:21,2024-02-13 16:11:22,1.394s,PASSED
+"firstname = getElementPropertyValue(response, ""firstname"")",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.037s,PASSED
+println(firstname),,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.002s,PASSED
+gbFirstName = firstname,,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.002s,PASSED
+println(gbFirstName),,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.002s,PASSED
+"verifyElementPropertyValue(response, ""firstname"", firstname)",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.032s,PASSED
+"verifyElementPropertyValue(response, ""lastname"", lastname)",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.026s,PASSED
+"verifyElementPropertyValue(response, ""totalprice"", totalprice)",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.023s,PASSED
+"verifyElementPropertyValue(response, ""depositpaid"", depositpaid)",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.024s,PASSED
+"verifyElementPropertyValue(response, ""bookingdates.checkin"", ""2024-02-14"")",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.032s,PASSED
+"verifyElementPropertyValue(response, ""bookingdates.checkout"", ""2024-02-15"")",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.032s,PASSED
+"verifyElementPropertyValue(response, ""additionalneeds"", additionalneeds)",,,,2024-02-13 16:11:22,2024-02-13 16:11:22,0.033s,PASSED

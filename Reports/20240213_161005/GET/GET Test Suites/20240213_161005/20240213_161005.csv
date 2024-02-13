@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+GET Test Suites,,,,2024-02-13 16:10:08,2024-02-13 16:10:14,5.796s,PASSED
+,,,,,,,
+Test Cases/GET/TC - GET Booking,,,,2024-02-13 16:10:08,2024-02-13 16:10:12,4.084s,PASSED
+"response = sendRequest(findTestObject(""GET Booking""))",,,,2024-02-13 16:10:09,2024-02-13 16:10:12,3.783s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-02-13 16:10:12,2024-02-13 16:10:12,0.023s,PASSED
+,,,,,,,
+Test Cases/GET/TC - GET BookingIds,,,,2024-02-13 16:10:12,2024-02-13 16:10:14,1.522s,PASSED
+"response = sendRequest(findTestObject(""GET BookingIds""))",,,,2024-02-13 16:10:13,2024-02-13 16:10:14,1.417s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-02-13 16:10:14,2024-02-13 16:10:14,0.004s,PASSED

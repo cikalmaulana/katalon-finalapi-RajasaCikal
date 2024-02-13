@@ -17,13 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('POST Get Token'))
+response = WS.sendRequest(findTestObject('POST Create Booking'))
 
-String newToken = WS.getElementPropertyValue(response, "token")
+String newBookingID = WS.getElementPropertyValue(response, "bookingid")
 
-println(newToken)
+GlobalVariable.bookingid = newBookingID
 
-GlobalVariable.token = newToken
-
-println(GlobalVariable.token)
-
+println(newBookingID)
+println(GlobalVariable.bookingid)
